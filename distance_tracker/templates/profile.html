@@ -1,1 +1,17 @@
-
+{% extends "base.html" %} {% block head %} {{ super() }}
+<link
+  rel="stylesheet"
+  href="{{ url_for('static', filename= 'extended_beauty.css') }}"
+/>
+<!-- Loads in style -->
+{% endblock %} {% block content %}
+<h1>
+  Welcome, {{ name }}!
+</h1>
+<!-- Shows user "Welcome, [name]" after login-->
+<p>
+  All of your workouts are saved
+  <a href="{{ url_for('main.user_workouts') }}">here</a>.
+</p>
+<p></p>
+{% endblock %}

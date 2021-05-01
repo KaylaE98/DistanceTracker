@@ -1,0 +1,33 @@
+{% extends "base.html" %} {% block head %} {{ super() }}
+<link
+  rel="stylesheet"
+  href="{{ url_for('static', filename= 'extended_beauty.css') }}"
+/>
+     <!-- Loads in the style -->
+{% endblock %} {% block content %}
+<div id="intro">
+  {% with messages = get_flashed_messages() %} {% if messages %}
+  <div class="notification is-success">
+    {{ messages[0] }}
+  </div>
+  {% endif %} {% endwith %}
+  <h1>
+    <center>Distance Tracker Application</center>
+  </h1>
+     <!-- Header saying Hello! -->
+  <center>
+    <img
+      src="{{ url_for('static', filename= 'images/treadmill.png') }}"
+      alt="running on a treadmill"
+      height="200px"
+    />
+     <!-- Loads in the treadmill image -->
+  </center>
+  <p>
+    <center>Welcome to the distance tracker! <br />This web app allows you to track the
+      distance you traveled during a workout (running, walking, biking, etc.)</a></center>
+    
+  </p>
+   <!-- Shows the above text at the bottom of the main page -->
+</div>
+{% endblock %}
