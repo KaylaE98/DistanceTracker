@@ -1,17 +1,27 @@
-Needed environment:
+Description:
+This application allows you to upload and track any distance based workout that you complete, such as a walk, run, or bicycle ride.
+In a later version, the ability to edit workouts, delete them, and visualize progress will be added.
+
+Needed Environment:
 TERM_PROGRAM=Apple_Terminal
 SHELL=/bin/bash
 TERM=xterm-256color
 TMPDIR=/var/folders/0r/4q31g91x7c18664lr0vcqx_80000gn/T/
 TERM_PROGRAM_VERSION=440
+OLDPWD=/Users/kaylaellis
 TERM_SESSION_ID=032F841A-E2D3-4D8C-A896-81E741E91E3A
+FLASK_APP=distance_tracker
+USER=kaylaellis
 SSH_AUTH_SOCK=/private/tmp/com.apple.launchd.93pqB1X4v5/Listeners
 PATH=/Library/Frameworks/Python.framework/Versions/3.9/bin:/Library/Frameworks/Python.framework/Versions/3.8/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Applications/VMware Fusion.app/Contents/Public
 __CFBundleIdentifier=com.apple.Terminal
+PWD=/Users/kaylaellis/Documents/DistanceTracker
 LANG=en_US.UTF-8
 XPC_FLAGS=0x0
 XPC_SERVICE_NAME=0
 SHLVL=1
+HOME=/Users/kaylaellis
+LOGNAME=kaylaellis
 _=/usr/bin/printenv
 
 Run On:
@@ -69,8 +79,9 @@ xmltodict==0.12.0
 yarl==1.6.3
 
 Process to run the application:
-First, install all needed requirements from the requirements.txt file
-Then, navigate to the parent folder for the project using your terminal (e.g. cd ~/Documents/DistanceTracker)
-Then, type the command export FLASK_APP=distance_tracker
-Then, type the command flask run
+1. Install all needed requirements from the requirements.txt file or from the list listed about
+2. Navigate to the parent folder for the project using your terminal (e.g. cd ~/Documents/DistanceTracker)
+3. Type the command export FLASK_APP=distance_tracker
+4. Type the command flask run
+
     The application will now be running on http://127.0.0.1:5000/
